@@ -1,20 +1,23 @@
-.container-ordenacao {
+.lista-ordenacao {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 2em;
   margin-top: 56px;
+  margin-bottom: 32px;
+  list-style-type: none;
 }
 
-.container-ordenacao ul {
-  display: flex;
-  list-style-type: none;
-  gap: 1em;
-}
-.container-ordenacao ul li {
+.lista-ordenacao__link {
   color: var(--cinza-medio);
   font-size: 22px;
+  text-decoration: none;
+  line-height: 33px;
+  font-weight: 400;
 }
-.container-ordenacao ul li.ativo {
+
+.lista-ordenacao__link--ativo {
   color: var(--verde-destaque);
+  font-weight: 600;
   text-decoration: underline;
 }
